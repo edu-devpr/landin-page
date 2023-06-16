@@ -1,0 +1,212 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "public sans";
+    font-size: 1.6rem;
+}
+
+/* --------- HEADER --------- */
+.cabecalho {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --------- LOGO --------- */
+.cabecalho .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo .img-da-logo {
+    width: 10rem;
+}
+
+.logo .texto-da-logo {
+    margin-left: 7px;
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: 10px 10px 10px rgba(128, 128, 128, .9);
+    transition: .3s ease-in-out;
+}
+
+.logo .texto-da-logo:hover {
+    color: rgba(60, 179, 113, 9);
+}
+
+
+/* --------- MENU --------- */
+.cabecalho .menu {
+    display: flex;
+    column-gap: 2.2rem;
+    margin-right: 20px;
+}
+
+.cabecalho .menu .item a {
+    padding: 1.8rem 1.5rem;
+    transition: .3s ease-in;
+
+}
+
+.cabecalho .menu .item a:hover {
+    background-color: rgba(60, 179, 113, 9);
+    color: rgba(224, 255, 255, 1);
+}
+
+/* --------- PRINCIPAL --------- */
+.principal .painel {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+    position: relative;
+
+    color: rgb(255, 255, 255);
+}
+
+.principal .painel .titulo {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.principal .painel .projetos1 {
+    background-image: url('../imgs/painel1.jpg');
+}
+
+.principal .painel .projetos2 {
+    background-image: url('../imgs/painel2.jpg');
+}
+
+.principal .painel .projetos3 {
+    background-image: url('../imgs/painel3.jpg');
+}
+
+.principal .painel .imagem-painel {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../imgs/painel1.jpg');
+    filter: brightness(60%);
+}
+
+.principal .painel .seta {
+    background: url('../imgs/seta.png') no-repeat bottom;
+    background-size: contain;
+    width: 80px;
+    min-height: 80px;
+}
+
+.principal .painel .btn-voltar {
+    position: absolute;
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.principal .painel .btn-avancar {
+    position: absolute;
+    right: 20px;
+}
+
+
+
+/* Filter propriedade utilizada normalmente em imgs que serve para criar efeitos de de visual */
+
+/* --------- PRINCIPAL QUEM SOMOS --------- */
+
+.quem-somos {
+    background-color: rgb(41, 65, 171);
+}
+
+.quem-somos .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.quem-somos .conteudo .informacao {
+    width: 40%;
+}
+
+.quem-somos .conteudo .informacao .titulo {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    color: rgb(30, 215, 96);
+}
+
+.quem-somos .conteudo .informacao .texto {
+    color: rgb(255, 255, 255);
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+.quem-somos .conteudo .img-quem-somos {
+    width: 60%;
+}
+
+/* Footer */
+
+.rodape {
+    padding: 80px 0 20px 0;
+}
+
+.rodape .navegation {
+
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodape .navegation .logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.rodape .navegation .redes-sociais {
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.rodape .navegation .redes-sociais a {
+    width: 65px;
+    height: 65px;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 50%;
+    margin-left: 20px;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+
+.rodape .navegation .redes-sociais a:hover {
+    background-color: rgb(30, 215, 96);
+}
+
+.rodape .navegation .redes-sociais a i {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rodape .copyright {
+    text-align: center;
+    margin-top: 70px;
+}
